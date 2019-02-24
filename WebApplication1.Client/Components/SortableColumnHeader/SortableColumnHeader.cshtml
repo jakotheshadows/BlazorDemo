@@ -1,0 +1,13 @@
+﻿@typeparam TCollectionType
+@typeparam TPropertyType
+@inherits SortableColumnHeaderComponent<TCollectionType, TPropertyType>
+
+<th>
+    @ColumnTitle
+    <button 
+        class="btn btn-sm btn-light"
+        type="button" 
+        onclick="@Sort">
+        <span class="@(SortDirection == "ASC" ? "oi oi-sort-ascending" : "oi oi-sort-descending")"></span>
+    </button>
+</th>

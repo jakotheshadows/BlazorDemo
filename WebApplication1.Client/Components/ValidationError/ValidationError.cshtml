@@ -1,0 +1,13 @@
+﻿@inherits ValidationErrorComponent
+
+@if (Errors != null)
+{ 
+    <div class="validationerror">
+        <ul>
+            @foreach (var error in Errors)
+            {
+                <li>@error</li>
+            }
+        </ul>
+    </div>
+}

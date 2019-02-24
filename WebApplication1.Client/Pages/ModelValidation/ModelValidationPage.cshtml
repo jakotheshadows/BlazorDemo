@@ -1,0 +1,62 @@
+﻿@page "/modelvalidation"
+@inherits ModelValidationCode
+
+<h1>Form Validation</h1>
+
+<p>This component demonstrates a form with a validatable model using the IValidatableObject interface.</p>
+
+<div class="form-group row">
+    <label for="mystring1" class="col-sm-1 col-form-label">My String 1</label>
+    <div class="col-sm-11">
+        <input 
+            id="mystring1" 
+            type="text" 
+            class="form-control" 
+            placeholder="Enter My String 1" 
+            bind="@Model.MyString1" 
+            oninput="@(x => Update(x, () => Model.MyString1 = (string) x.Value))" />
+        <ValidationError Subject="@Model" Property="@nameof(Model.MyString1)" />
+    </div>
+</div>
+
+<div class="form-group row">
+    <label for="mystring2" class="col-sm-1 col-form-label">My String 2</label>
+    <div class="col-sm-11">
+        <input 
+            id="mystring2" 
+            type="text" 
+            class="form-control" 
+            placeholder="Enter My String 2" 
+            bind="@Model.MyString2" 
+            oninput="@(x => Update(x, () => Model.MyString2 = (string) x.Value))" />
+        <ValidationError Subject="@Model" Property="@nameof(Model.MyString2)" />
+    </div>
+</div>
+
+<div class="form-group row">
+    <label for="myint1" class="col-sm-1 col-form-label">My Int 1</label>
+    <div class="col-sm-11">
+        <input 
+            id="myint1" 
+            type="number" 
+            class="form-control" 
+            placeholder="Enter My Int 1" 
+            bind="@Model.MyInt1"
+            oninput="@(x => Update(x, () => Model.MyInt1 = string.IsNullOrWhiteSpace((string) x.Value) ? 0 : Convert.ToInt32((string) (x.Value ?? "0"))))"/>
+        <ValidationError Subject="@Model" Property="@nameof(Model.MyInt1)" />
+    </div>
+</div>
+
+<div class="form-group row">
+    <label for="myint2" class="col-sm-1 col-form-label">My Int 2</label>
+    <div class="col-sm-11">
+        <input 
+            id="myint2" 
+            type="number" 
+            class="form-control" 
+            placeholder="Enter My Int 2" 
+            bind="@Model.MyInt2"
+            oninput="@(x => Update(x, () => Model.MyInt2 = string.IsNullOrWhiteSpace((string) x.Value) ? 0 : Convert.ToInt32((string) (x.Value ?? "0"))))" />
+        <ValidationError Subject="@Model" Property="@nameof(Model.MyInt2)" />
+    </div>
+</div>

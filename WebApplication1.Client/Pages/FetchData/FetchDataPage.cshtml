@@ -1,0 +1,66 @@
+﻿@page "/fetchdata"
+@inherits FetchDataCode
+
+<h1>Weather forecast</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<input type="text" bind="@ComponentString"/>
+<button class="btn btn-primary" onclick="@ComponentMethod">ComponentMethod</button>
+
+@if (Forecasts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <SortableColumnHeader ColumnTitle="Date"
+                                               SortColumn="Date"
+                                               bind-CurrentSortColumn="@CurrentSortColumn"
+                                               Collection="@Forecasts"
+                                               UpdateCollection="@UpdateCollection"
+                                               SortBy="@(x => x.Date)">
+                </SortableColumnHeader>
+                <SortableColumnHeader ColumnTitle="Temp. (C)"
+                                               SortColumn="Celsius"
+                                               bind-CurrentSortColumn="@CurrentSortColumn"
+                                               Collection="@Forecasts"
+                                               UpdateCollection="@UpdateCollection"
+                                               SortBy="@(x => x.TemperatureC)">
+                </SortableColumnHeader>
+                <SortableColumnHeader ColumnTitle="Temp. (F)"
+                                               SortColumn="Fahrenheit"
+                                               bind-CurrentSortColumn="@CurrentSortColumn"
+                                               Collection="@Forecasts"
+                                               UpdateCollection="@UpdateCollection"
+                                               SortBy="@(x => x.TemperatureF)">
+                </SortableColumnHeader>
+                <SortableColumnHeader ColumnTitle="Summary"
+                                               SortColumn="Summary"
+                                               bind-CurrentSortColumn="@CurrentSortColumn"
+                                               Collection="@Forecasts"
+                                               UpdateCollection="@UpdateCollection"
+                                               SortBy="@(x => x.Summary)">
+                </SortableColumnHeader>
+                @*<th>Date <button class="btn btn-sm btn-light" type="button" onclick="@SortByDate"><span class="@(SortColumn != "Date" || SortDirection != "ASC" ? "oi oi-sort-ascending" : "oi oi-sort-descending")"></span></button></th>
+        <th>Temp. (C) <button class="btn btn-sm btn-light" type="button" onclick="@SortByCelsius"><span class="@(SortColumn != "Celsius" || SortDirection != "ASC" ? "oi oi-sort-ascending" : "oi oi-sort-descending")"></span></button></th>
+        <th>Temp. (F) <button class="btn btn-sm btn-light" type="button" onclick="@SortByFahrenheit"><span class="@(SortColumn != "Fahrenheit" || SortDirection != "ASC" ? "oi oi-sort-ascending" : "oi oi-sort-descending")"></span></button></th>
+        <th>Summary <button class="btn btn-sm btn-light" type="button" onclick="@SortBySummary"><span class="@(SortColumn != "Summary" || SortDirection != "ASC" ? "oi oi-sort-ascending" : "oi oi-sort-descending")"></span></button></th>*@
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var forecast in Forecasts)
+            {
+                <tr>
+                    <td>@forecast.Date.ToShortDateString()</td>
+                    <td>@forecast.TemperatureC</td>
+                    <td>@forecast.TemperatureF</td>
+                    <td>@forecast.Summary</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

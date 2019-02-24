@@ -1,0 +1,13 @@
+C:\Users\Anthony\.nuget\packages\microsoft.aspnetcore.blazor\0.8.0-preview-19104-04\lib\netstandard2.0\Microsoft.AspNetCore.Blazor.dll
+C:\Users\Anthony\.nuget\packages\microsoft.aspnetcore.components\3.0.0-preview-19075-0444\lib\netstandard2.0\Microsoft.AspNetCore.Components.dll
+C:\Users\Anthony\.nuget\packages\microsoft.aspnetcore.components.browser\3.0.0-preview-19075-0444\lib\netstandard2.0\Microsoft.AspNetCore.Components.Browser.dll
+C:\Users\Anthony\.nuget\packages\microsoft.extensions.dependencyinjection\3.0.0-preview.19074.2\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Anthony\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\3.0.0-preview.19074.2\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Anthony\.nuget\packages\microsoft.jsinterop\3.0.0-preview.19074.2\lib\netstandard2.0\Microsoft.JSInterop.dll
+C:\Users\Anthony\.nuget\packages\mono.webassembly.interop\0.8.0-preview1-20181126.4\lib\netstandard2.0\Mono.WebAssembly.Interop.dll
+C:\Users\Anthony\.nuget\packages\system.componentmodel\4.3.0\lib\netstandard1.3\System.ComponentModel.dll
+C:\Users\Anthony\.nuget\packages\system.componentmodel.annotations\4.1.0\lib\netstandard1.4\System.ComponentModel.Annotations.dll
+C:\Users\Anthony\.nuget\packages\system.linq\4.1.0\lib\netstandard1.6\System.Linq.dll
+C:\Users\Anthony\.nuget\packages\system.text.regularexpressions\4.1.0\lib\netstandard1.6\System.Text.RegularExpressions.dll
+C:\Users\Anthony\.nuget\packages\system.threading\4.0.11\lib\netstandard1.3\System.Threading.dll
+C:\Users\Anthony\Source\Repos\WebApplication1\WebApplication1.Shared\bin\Debug\netstandard2.0\WebApplication1.Shared.dll
