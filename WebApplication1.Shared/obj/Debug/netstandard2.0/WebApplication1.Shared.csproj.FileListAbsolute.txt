@@ -1,8 +1,0 @@
-C:\Users\Anthony\Source\Repos\WebApplication1\WebApplication1.Shared\bin\Debug\netstandard2.0\WebApplication1.Shared.deps.json
-C:\Users\Anthony\Source\Repos\WebApplication1\WebApplication1.Shared\bin\Debug\netstandard2.0\WebApplication1.Shared.dll
-C:\Users\Anthony\Source\Repos\WebApplication1\WebApplication1.Shared\bin\Debug\netstandard2.0\WebApplication1.Shared.pdb
-C:\Users\Anthony\Source\Repos\WebApplication1\WebApplication1.Shared\obj\Debug\netstandard2.0\WebApplication1.Shared.csproj.CoreCompileInputs.cache
-C:\Users\Anthony\Source\Repos\WebApplication1\WebApplication1.Shared\obj\Debug\netstandard2.0\WebApplication1.Shared.AssemblyInfoInputs.cache
-C:\Users\Anthony\Source\Repos\WebApplication1\WebApplication1.Shared\obj\Debug\netstandard2.0\WebApplication1.Shared.AssemblyInfo.cs
-C:\Users\Anthony\Source\Repos\WebApplication1\WebApplication1.Shared\obj\Debug\netstandard2.0\WebApplication1.Shared.dll
-C:\Users\Anthony\Source\Repos\WebApplication1\WebApplication1.Shared\obj\Debug\netstandard2.0\WebApplication1.Shared.pdb
