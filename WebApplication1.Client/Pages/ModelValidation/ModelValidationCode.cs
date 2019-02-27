@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Components;
 using System;
-using System.Text;
 using WebApplication1.Shared;
 
 namespace WebApplication1.Client.Pages.ModelValidation
