@@ -343,3 +343,15 @@ healthchecksdb
 
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
+
+WebApplication1\.Shared/obj/Debug/netstandard2\.0/
+
+WebApplication1\.Shared/bin/Debug/netstandard2\.0/
+
+*.cache
+
+WebApplication1\.Server/bin/Debug/netcoreapp3\.0/
+
+WebApplication1\.Client/obj/Debug/netstandard2\.0/
+
+WebApplication1\.Client/bin/Debug/netstandard2\.0/
